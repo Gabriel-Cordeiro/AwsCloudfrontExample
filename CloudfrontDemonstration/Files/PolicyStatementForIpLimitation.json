@@ -1,0 +1,11 @@
+﻿{
+    "Statement": [
+        {
+            "Resource": "RESOURCE",
+            "Condition": {
+                "IpAddress": { "AWS:SourceIp": "IPADDRESS" },
+                "DateLessThan": { "AWS:EpochTime": EXPIRES }
+            }
+        }
+    ]
+}
